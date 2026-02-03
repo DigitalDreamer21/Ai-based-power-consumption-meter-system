@@ -1,0 +1,9 @@
+<h2>📊 Prediction Result</h2>
+<p><strong>Home:</strong> {{ home_number }}</p>
+<p><strong>Date:</strong> {{ date }} at {{ time }}</p>
+<p><strong>Predicted Meter Reading:</strong> {{ prediction }} kWh</p>
+
+{% if plot_url %}
+    <h3>📉 Reading Chart</h3>
+    <img src="{{ plot_url }}" alt="Reading Graph" style="width:100%; max-width:800px;">
+{% endif %}
